@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int temp;
+
+    cin >> temp;
+
+    if(temp>28)
+        cout << "AC ON";
+    else
+        cout << "AC OFF";
+}
