@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int coffee;
+
+    cin >> coffee;
+
+    if(coffee==1)
+        cout << "Coffee Ready";
+    else
+        cout << "Machine Off";
+}
