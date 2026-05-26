@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int playerHP = 100;
+    int enemyHP = 100;
+
+    int damage;
+
+    cout << "=== MINI BATTLE ARENA ===\n";
+
+    while(playerHP > 0 && enemyHP > 0) {
+
+        cout << "\nYour HP: "
+             << playerHP
+             << endl;
+
+        cout << "Enemy HP: "
+             << enemyHP
+             << endl;
+
+        cout << "Enter attack damage: ";
+        cin >> damage;
+
+        enemyHP -= damage;
+
+        playerHP -= 15;
+
+        cout << "You attacked the enemy!\n";
+        cout << "Enemy attacked you!\n";
+    }
+
+    if(playerHP > 0)
+        cout << "\nYOU WIN!";
+    else
+        cout << "\nYOU LOSE!";
+}
