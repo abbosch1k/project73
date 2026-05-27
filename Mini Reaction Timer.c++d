@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    char c;
+
+    cout << "Press Z\n";
+    cin >> c;
+
+    if(c == 'z')
+        cout << "Good Reaction!";
+}
